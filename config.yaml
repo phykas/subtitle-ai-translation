@@ -1,0 +1,9 @@
+openai:
+  model: "gpt-4o-mini"
+  max_tokens: 4500
+  temperature: 0.1
+  context_buffer: 500  # Reserve tokens for system prompt and response
+
+chunking:
+  max_chunk_size: 4000  # Tokens per chunk (adjusted for context_buffer)
+  overlap_lines: 2      # Number of subtitle lines to overlap between chunks
